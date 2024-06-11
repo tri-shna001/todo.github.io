@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    background: rgba(45, 107, 253, 50%);
+  }
+  
+  .main_container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 50px;
+  }
+  
+  .todo_container {
+    height: 20vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .todo_container h2 {
+    color: rgb(2, 1, 1);
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  #todo_input {
+    height: 5vh;
+    width: 20vw;
+    padding: 0 15px;
+    border: none;
+    border-radius: 9px;
+    margin-top: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #add_button {
+    width: 4vw;
+    height: 5vh;
+    border: none;
+    border-radius: 6px;
+    background-color: #2e60ea;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: rgba(45, 107, 253, 0.251);
+    transition: 0.3s linear;
+  }
+  
+  .all_task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+  
+  .line {
+    height: 2px;
+    width: 100vw;
+    background-color: blue;
+  }
+  
+  .count {
+    margin-top: 8px;
+    font-size: 18px;
+  }
+  
+  #lists .task {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .task {
+    border: 1px solid rgb(255, 255, 255);
+    width: 80vw;
+    margin-top: 8px;
+    border-radius: 8px;
+  }
+  
+  .text {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .edit {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .edit:hover {
+    background-color: transparent;
+  }
+  
+  .delete {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .delete:hover {
+    background-color: transparent;
+  }
+  
+  @media (max-width: 768px) 
+  {
+    .main_container {
+      height: 100vh;
+      width: 100vw;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .todo_container {
+      height: 20vh;
+      width: 80vw;
+      margin-top: 20px;
+    }
+  
+    #todo_input {
+      width: 40vw;
+    }
+  
+    #add_button {
+      width: 10vw;
+    }
+  
+    .task {
+      width: 60vw;
+    }
+  }
+  
+  
+  @media (max-width: 480px)
+   {
+    .main_container {
+      height: 100vh;
+      width: 100vw;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .todo_container {
+      height: 20vh;
+      width: 90vw;
+      margin-top: 10px;
+    }
+  
+    #todo_input {
+      width: 60vw;
+    }
+  
+    #add_button {
+      width: 15vw;
+    }
+  
+    .task {
+      width: 80vw;
+    }
+  }
